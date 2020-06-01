@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TicTacToe2</string>
+    <string name="single_game_string">ОДИНОЧНАЯ ИГРА</string>
+    <string name="multi_game_string">ИГРА НА ДВОИХ</string>
+    <string name="exit_string">ВЫЙТИ</string>
+    <string name="cross_are_begining">НАЧИНАЮТ КРЕСТИКИ</string>
+    <string name="todo">TODO</string>
+</resources>

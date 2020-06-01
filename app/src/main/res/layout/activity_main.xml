@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="80%"
+        android:layout_centerHorizontal="true"
+        app:layout_marginTopPercent="10%"
+        app:layout_marginBottomPercent="3%"
+        android:id="@+id/logo_img"
+        android:src="@drawable/logo"
+        />
+
+    <android.support.percent.PercentRelativeLayout
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="80%"
+        android:layout_below="@+id/logo_img"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            app:layout_heightPercent="23%"
+            app:layout_widthPercent="100%"
+            android:id="@+id/single_player_btn"
+            android:text="@string/single_game_string"
+            android:background="@drawable/btn_form"
+            android:textColor="#ECECEC"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_marginPercent="5%"
+            android:layout_gravity="center"/>
+
+        <Button
+            app:layout_heightPercent="23%"
+            app:layout_widthPercent="100%"
+            android:layout_below="@id/single_player_btn"
+            android:id="@+id/multi_player_btn"
+            android:text="@string/multi_game_string"
+            android:background="@drawable/btn_form"
+            android:textColor="#ECECEC"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_marginPercent="5%"
+            android:layout_gravity="center"/>
+
+        <Button
+            app:layout_heightPercent="23%"
+            app:layout_widthPercent="100%"
+            android:id="@+id/exit_btn"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="@string/exit_string"
+            android:background="@drawable/btn_form"
+            android:textColor="#ECECEC"
+            android:layout_below="@id/multi_player_btn"
+            app:layout_marginPercent="5%"
+            android:layout_gravity="center"/>
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</android.support.percent.PercentRelativeLayout>
